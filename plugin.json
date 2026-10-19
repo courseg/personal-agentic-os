@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "personal-agentic-os-setup",
+  "version": "1.0.0",
+  "description": "Six-session guided build of a personal file-based agentic OS: scope one role, capture how you operate and how you write, harvest real material into folders, write first workflows, and install a weekly review loop.",
+  "author": {
+    "name": "George Pratsos",
+    "url": "https://github.com/courseg"
+  },
+  "repository": "https://github.com/courseg/agentic-os-setup",
+  "license": "MIT",
+  "keywords": [
+    "agentic-os",
+    "second-brain",
+    "AGENTS.md",
+    "interview",
+    "onboarding"
+  ],
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md",
+      "interface": {
+        "displayName": "Personal Agentic OS Setup",
+        "shortDescription": "Build your own agentic OS, one interview at a time",
+        "longDescription": "A six-session guided build of a personal file-based agentic OS in your own folder: AGENTS.md routing, context files, a voice and refusal profile, workflows, and a weekly review loop. You answer questions; the agent creates and maintains the files.",
+        "developerName": "George Pratsos",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ],
+        "websiteURL": "https://github.com/courseg/agentic-os-setup",
+        "defaultPrompt": [
+          "Build my personal agentic OS. Interview me.",
+          "Continue building my agentic OS."
+        ],
+        "brandColor": "#0F4C5C",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
